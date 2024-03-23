@@ -1,0 +1,7 @@
+/* 模块化 */
+@import url(./commom/subBar.css);
+
+body {
+  background: url(../images/pro-bg.jpg) no-repeat top;
+  background-size: cover;
+}

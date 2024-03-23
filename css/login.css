@@ -1,0 +1,82 @@
+#wrap {
+  height: 100vh;
+  /* 
+  vh/vw用于适配
+  将可视区横着分为100行，竖着分为100列
+   */
+  /* 让主页面和可视区一样高。方便其他排版 */
+  display: flex;
+  /* 弹性盒模型 */
+  flex-direction: column;
+  /* 纵向排列 */
+  align-items: center;
+  /* 垂直方向居中显示 */
+  justify-content: center;
+  /* 水平方向居中显示 */
+
+  background: #0a0909 url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+  /* 覆盖可视区，自动缩放 */
+}
+
+.logo {
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+#wrap p {
+  width: 450px;
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  line-height: 45px;
+  position: relative;
+  /* 父级相对定位，便于子级定位 */
+}
+
+#wrap label {
+  width: 110px;
+  background-color: #ff8400;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+}
+
+#wrap input {
+  width: 100%;
+  border: none;
+  color: #b2b2b2;
+  padding-left: 10px;
+  border-radius: 0 30px 30px 0;
+}
+
+#wrap .tips {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  font-size: 16px;
+  color: red;
+}
+
+input::placeholder {
+  color: #ccc;
+  font-size: 16px;
+}
+
+#wrap button {
+  /* 两个盒子之间自带缝隙，是盒子之间的换行转义为了空格 */
+  width: 100px;
+  height: 45px;
+  margin: 0 10px;
+  background-color: #ff8400;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 30px;
+}
+
+#wrap button:nth-child(2) {
+  background-color: #cc2e2a;
+}
