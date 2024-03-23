@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- 侧边栏 -->
   <div id="wrap">
     <div id="subBar">
       <a href="#">
@@ -30,6 +31,63 @@
     </div>
     <div id="navBar"></div>
     <div id="content"></div>
+  </div>
+  <!-- 顶部导航栏 -->
+  <div id="navBar">
+    <ui class="navWrap">
+      <li class="active">
+        <span class="iconfont">&#xe629;</span>
+        <span class="text">推荐</span>
+      </li>
+      <li>
+        <span class="iconfont">&#xe6a2;</span>
+        <span class="text">热菜</span>
+      </li>
+      <li>
+        <span class="iconfont">&#xee58;</span>
+        <span class="text">凉菜</span>
+      </li>
+      <li>
+        <span class="iconfont">&#xe6cc;</span>
+        <span class="text">主食</span>
+      </li>
+    </ui>
+    <div class="search">
+      <input type="text">
+      <button>
+        <span class="iconfont">&#xe687;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 右下角菜品 -->
+  <div id="content">
+    <ul class="foodList">
+      <li>
+        <img src="/images/小龙虾.jpg" alt="">
+        <span class="iconfont recommend">&#xe629;</span>
+        <div class="bar">
+          <h3>麻辣小龙虾</h3>
+          <p>
+            <span class="rmb">RMB</span>
+            <span class="price">88/份</span>
+            <button><span class="iconfont">&#xeaf3;</span></button>
+          </p>
+        </div>
+      </li>
+      <li>
+        <img src="/images/红烧鸭.jpg" alt="">
+        <span class="iconfont recommend">&#xe629;</span>
+        <div class="bar">
+          <h3>红烧鸭</h3>
+          <p>
+            <span class="rmb">RMB</span>
+            <span class="price">79/份</span>
+            <button><span class="iconfont">&#xeaf3;</span></button>
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </body>
 

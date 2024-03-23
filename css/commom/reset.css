@@ -1,11 +1,12 @@
 /* 样式重置 */
 /* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
   font-family: 'iconfont';
   /* Project id 4478502 */
-  src: url('http://at.alicdn.com/t/c/font_4478502_18m3hfkb9yn.woff2?t=1711120251873') format('woff2'),
-    url('http://at.alicdn.com/t/c/font_4478502_18m3hfkb9yn.woff?t=1711120251873') format('woff'),
-    url('http://at.alicdn.com/t/c/font_4478502_18m3hfkb9yn.ttf?t=1711120251873') format('truetype');
+  src: url('http://at.alicdn.com/t/c/font_4478502_rxrxx21jfh9.woff2?t=1711198809216') format('woff2'),
+    url('http://at.alicdn.com/t/c/font_4478502_rxrxx21jfh9.woff?t=1711198809216') format('woff'),
+    url('http://at.alicdn.com/t/c/font_4478502_rxrxx21jfh9.ttf?t=1711198809216') format('truetype');
 }
 
 .iconfont {

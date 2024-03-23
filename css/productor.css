@@ -1,7 +1,92 @@
 /* 模块化 */
 @import url(./commom/subBar.css);
+@import url(./commom/navBar.css);
 
 body {
   background: url(../images/pro-bg.jpg) no-repeat top;
   background-size: cover;
+  /* 背景固定不会跟着滚动条滚动 */
+  background-attachment: fixed;
+}
+
+#content {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  bottom: 20px;
+  left: 200px;
+  background: rgba(255, 255, 255, .2);
+  box-sizing: border-box;
+  padding: 10px;
+  /* 超出范围自动隐藏给滚动条 */
+  overflow: hidden;
+}
+
+.foodList {
+  font-size: 0;
+}
+
+.foodList li {
+  /* 弹性盒模型让每一行行内元素中间间距都一样时，如果最后一行个数与之前行不同，这一行元素之间的距离为了保持一致会调整，导致与其他行不协调，所以改为行内块，贴着左侧排列 */
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.foodList img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.recommend {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 30px;
+  color: #ff8400;
+}
+
+.foodList .bar {
+  width: 100%;
+  height: 25px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 25px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.foodList .bar p {
+  display: flex;
+  align-items: center;
+}
+
+.foodList .rmb {
+  font-size: 12px;
+}
+
+.foodList .price {
+  color: #f0e184;
+  margin: 0 5px;
+}
+
+.foodList .bar button {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background: #ff8400;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.foodList .bar button span {
+  font-size: 14px;
 }
