@@ -1,0 +1,91 @@
+@import url(./commom/backCommon.css);
+
+.category {
+  /* 父级清除浮动，子级浮动 */
+  overflow: hidden;
+
+}
+
+.category li {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 0 10px 20px 10px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  /* 父级相对定位 */
+  position: relative;
+  /* 里面两个div位置重叠用绝对定位 */
+}
+
+.category li div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  /* 垂直方向居中对齐 */
+  align-items: center;
+}
+
+.icon {
+  justify-content: center;
+  /* 内部竖着排列 */
+  flex-direction: column;
+}
+
+.icon .iconfont {
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: #ff8400;
+
+}
+
+.icon .name {
+  font-size: 20px;
+  color: #aaa;
+}
+
+.edit {
+  /* 分散居中对齐 */
+  /* 两个图标平分空间 */
+  justify-content: space-around;
+  background: rgba(0, 0, 0, .8);
+  /* 平时不展示，hover显示 */
+  opacity: 0;
+}
+
+.edit span {
+  color: #dbdbdb;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.edit span:hover {
+  color: #ff8400;
+}
+
+.category li:hover .edit {
+  /* 层级高可以选择到 */
+  opacity: 1;
+  transition: .4s;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+  /* border: 1px solid #ccc; */
+}
+
+.add span {
+  font-size: 150px;
+  color: #ccc;
+}
+
+.add:hover {
+  background: #eee;
+  transition: .3s;
+}

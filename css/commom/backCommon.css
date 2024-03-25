@@ -1,0 +1,43 @@
+.left {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #3f3f3f;
+}
+
+.left img {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* 左边固定定位脱离文档流，所以右边的东西会被盖住，所以要给右边设置位置边距等 */
+.left li {
+  font-size: 16px;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 30px;
+  border-bottom: 1px solid #2b2b2b;
+  cursor: pointer;
+}
+
+.left li span {
+  margin-right: 20px;
+}
+
+.left li.active,
+.left li:hover {
+  background: #2b2b2b;
+}
+
+.right {
+  /* 最小高度为可视区的高度，可以出现滚动条 */
+  min-height: 100vh;
+  background: #e0e3e8;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  /* 不给定位，给边距 */
+  margin-left: 200px;
+}
