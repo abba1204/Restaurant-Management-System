@@ -1,0 +1,179 @@
+/* 模块化 */
+@import url(./commom/subBar.css);
+@import url(./commom/navBar.css);
+
+body {
+  background: url(../images/pro-bg.jpg) no-repeat top;
+  background-size: cover;
+  /* 背景固定不会跟着滚动条滚动 */
+  background-attachment: fixed;
+}
+
+#content {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  bottom: 20px;
+  left: 200px;
+  background: rgba(255, 255, 255, .2);
+  box-sizing: border-box;
+  padding: 10px;
+  /* 超出范围自动隐藏给滚动条 */
+  overflow: hidden;
+}
+
+.orderBox {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.orderBox li {
+  background: rgba(255, 255, 255, .1);
+  /* 盒子阴影 */
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+  padding-left: 20px;
+}
+
+.orderBox img {
+  width: 80px;
+  height: 80px;
+
+}
+
+.orderBox table {
+  width: 100%;
+}
+
+.orderBox tr {
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.orderBox td {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.orderBox td:nth-child(1) {
+  width: 5%;
+}
+
+.orderBox td:nth-child(6) {
+  /* 不会让备注全部展示出来，超出的显示成三个点 */
+  width: 20%;
+  /* 超出隐藏 */
+  overflow: hidden;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 三个点 */
+  text-overflow: ellipsis;
+
+}
+
+.orderBox button {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .5);
+  vertical-align: middle;
+}
+
+.orderBox button span {
+  font-size: 10px;
+}
+
+.orderBox button.select span {
+  font-size: 15px;
+}
+
+.orderBox .num {
+  /* 行内级别转为行内块间距才生效 */
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  font-size: 12px;
+  /* 
+    解决不对齐 
+    上面button也要加vertical-align
+  */
+  vertical-align: middle;
+}
+
+/* 解决缝隙 */
+.orderBox td:nth-child(4) {
+  font-size: 0;
+}
+
+/* 底部foot */
+.orderBox .foot {
+  display: flex;
+  /* 两端对齐 */
+  justify-content: space-between;
+  padding: 15px 10px 15px;
+  color: #fff;
+}
+
+.orderBox .foot span {
+  margin-right: 40px;
+}
+
+.orderBox .foot strong {
+  color: #ffcb4e;
+  font-size: 18px;
+}
+
+
+.orderBox .addDishes {
+  width: 50px;
+  height: 25px;
+  background: #a65335;
+  border-radius: 5px;
+  border: none;
+}
+
+.orderBox .pay {
+  width: 80px;
+  height: 25px;
+  background: #ff8400;
+  font-style: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 已下单样式 */
+.shopped li {
+  padding: 0;
+}
+
+.shopped th {
+  height: 60px;
+  background: rgba(255, 255, 255, .25);
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+.shopped td:nth-child(2) {
+  width: 25%;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.shopped img {
+  margin-right: 10px;
+  /* 与文字垂直居中对齐 */
+  vertical-align: middle;
+}
+
+.shopped td:nth-child(4) {
+  font-size: 16px;
+}
+
+.shopped .foot {
+  padding: 15px 20px;
+}

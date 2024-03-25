@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- <i class="iconfont">&#x33;</i> -->
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/commom/reset.css">
+  <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+  <!-- 侧边栏 -->
+  <div id="wrap">
+    <div id="subBar">
+      <a href="#">
+        <img src="images/logo.png" class="logo" alt="">
+      </a>
+      <div class="message">
+        <p>欢迎您：kaivon</p>
+        <p>空闲桌位：5桌</p>
+        <p>正在点餐：1桌</p>
+        <p>正在用餐：5桌</p>
+        <p>未选桌子</p>
+      </div>
+      <ul class="action">
+        <li class="ac"><i>0</i><span class="iconfont">&#xe63f;</span>已点</li>
+        <li><span class="iconfont">&#xe62e;</span>座位</li>
+        <li><span class="iconfont">&#xe619;</span>后台</li>
+        <li><span class="iconfont">&#xe698;</span>退出</li>
+      </ul>
+    </div>
+    <div id="navBar"></div>
+    <div id="content"></div>
+  </div>
+  <!-- 顶部导航栏 -->
+  <div id="navBar">
+    <ui class="navWrap">
+      <li class="active">
+        <span class="iconfont">&#xe70e;</span>
+        <span class="text">已点</span>
+      </li>
+      <li>
+        <span class="iconfont">&#xe648;</span>
+        <span class="text">已下单</span>
+      </li>
+
+      </li>
+    </ui>
+    <div class="search">
+      <input type="text">
+      <button>
+        <span class="iconfont">&#xe687;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 右下角菜品 -->
+  <div id="content">
+    <!-- 已点结构 -->
+    <ul class="orderBox">
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="images/小龙虾.jpg" alt=""></td>
+              <td>小龙虾</td>
+              <td>
+                <button><span class="iconfont">&#xe729;</span></button>
+                <span class="num">1</span>
+                <button><span class="iconfont">&#xe626;</span></button>
+              </td>
+              <td>￥79 × 1</td>
+              <td>多点辣</td>
+              <td>
+                <button class="select">
+                  <span class="iconfont">&#xeaf1;</span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><img src="images/小龙虾.jpg" alt=""></td>
+              <td>小龙虾</td>
+              <td>
+                <button><span class="iconfont">&#xe729;</span></button>
+                <span class="num">1</span>
+                <button><span class="iconfont">&#xe626;</span></button>
+              </td>
+              <td>￥79 × 1</td>
+              <td>多点辣</td>
+              <td>
+                <button class="select">
+                  <span class="iconfont">&#xeaf1;</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 底部 -->
+        <div class="foot">
+          <div>
+            <span>桌号：<strong>10</strong>号桌</span>
+            <span>人数：1</span>
+            <span>订单号：1621244350985</span>
+            <button class="addDishes">添菜</button>
+          </div>
+
+          <div>
+            <span>总消费：￥<strong>98</strong></span>
+            <button class="pay">下单</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- 已下单 -->
+    <ul class="orderBox shopped">
+      <li>
+        <table>
+          <!-- 表格头 -->
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>菜品名称</th>
+              <th>价格/数量</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="images/小龙虾.jpg" alt="">
+                <span>小龙虾</span>
+              </td>
+
+              <td>￥79 × 1</td>
+              <td>待上菜</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="images/小龙虾.jpg" alt="">
+                <span>小龙虾</span>
+              </td>
+
+              <td>￥79 × 1</td>
+              <td>待上菜</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+        <!-- 底部 -->
+        <div class="foot">
+          <div>
+            <span>桌号：<strong>10</strong>号桌</span>
+            <span>人数：1</span>
+            <span>订单号：1621244350985</span>
+            <span>下单时间：2021-05-13 15：05：35</span>
+          </div>
+          <div>
+            <span>总消费：￥<strong>98</strong></span>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

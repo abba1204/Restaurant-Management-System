@@ -73,7 +73,7 @@ body {
 .table li {
   display: inline-block;
   text-align: center;
-  margin: 0 37px 5px 37px;
+  margin: 0 37px 25px 37px;
   cursor: pointer;
   color: #fff;
 }
@@ -88,4 +88,5 @@ body {
 
 .table div span {
   font-size: 60px;
+
 }
